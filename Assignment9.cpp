@@ -42,3 +42,32 @@ int main()
     cin>>n;
     cout<<fact(n);
 }
+
+//Question 4
+#include<bits/stdc++.h>
+using namespace std;
+
+int getexponent(int n,int p)
+{
+    if(n==0 or n==1)
+    {
+        return n;
+    }
+    if(p==0)
+    {
+        return 1;
+    }
+    return n*getexponent(n,p-1);
+}
+
+int main()
+{
+    int n,p;
+    cin>>n;
+    cin>>p;
+    int ans=getexponent(n,p);
+    cout<<ans;
+}
+
+
+
