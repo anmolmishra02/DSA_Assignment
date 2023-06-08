@@ -1,4 +1,4 @@
-//Question 1 
+//----------------------------------------Question 1 
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
@@ -9,7 +9,7 @@ public:
 };
 
 
-//Question 2
+//-----------------------------------------Question 2
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -28,7 +28,7 @@ int main()
 }
 
 
-//Question 3
+//------------------------------------------Question 3
 int fact(int n)
 {
     if(n==0)
@@ -43,7 +43,9 @@ int main()
     cout<<fact(n);
 }
 
-//Question 4
+
+//-------------------------------------------Question 4
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -70,7 +72,7 @@ int main()
 }
 
 
-//Question 5
+//--------------------------------------------Question 5
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -99,10 +101,30 @@ int main()
     cout<<ans;
 }
 
+//---------------------------------------------Question 6
+
+#include<bits/stdc++.h>
+using namespace std;
+int getnthterm(int a,int n,int d)
+{
+    if(n==1)
+    {
+        return a;
+    }
+    return d+getnthterm(a,n-1,d);
+}
+int main()
+{
+    int a,d,n;
+    cin>>a>>d>>n;
+    
+    cout<<getnthterm(a,n,d);
+}
 
 
 
-//////////Question 8
+
+//-------------------------------------------Question 8
 
 #include<bits/stdc++.h>
 using namespace std;
